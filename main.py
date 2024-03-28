@@ -724,6 +724,7 @@ class VI():
             y_axis_label=td[lang_selected][17] + ', '+ td[lang_selected][15],
             plot_width=500, plot_height=300,
         )
+        
         _p.sizing_mode = "scale_both"
         _p.line(_result['i'], (_result['Eload']-_result['eta_con']),  line_width=2)
         _p.axis.axis_label_text_font_style = 'bold'
